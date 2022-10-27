@@ -1,5 +1,6 @@
 package com.luv2code.junitdemo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DemoUtils {
@@ -7,7 +8,7 @@ public class DemoUtils {
     private String academy = "Luv2Code Academy";
     private String academyDuplicate = academy;
     private String[] firstThreeLettersOfAlphabet = {"A", "B", "C"};
-    private List<String> academyInList = List.of("luv", "2", "code");
+    private List<String> academyInList =List.of("luv", "2", "code");
 
     public List<String> getAcademyInList() {
         return academyInList;
@@ -26,7 +27,7 @@ public class DemoUtils {
     }
 
     public int add(int a, int b) {
-        return a + b;
+        return a + b ;
     }
 
     public int multiply(int a, int b) {
@@ -56,7 +57,7 @@ public class DemoUtils {
 
     public void checkTimeout() throws InterruptedException {
         System.out.println("I am going to sleep");
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         System.out.println("Sleeping over");
     }
 
