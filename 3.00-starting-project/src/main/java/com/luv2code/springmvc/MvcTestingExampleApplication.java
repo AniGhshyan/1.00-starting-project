@@ -22,9 +22,15 @@ public class MvcTestingExampleApplication {
 
 	@Bean
 	@Scope(value = "prototype")
-	Grade getMathGrade(double grade) {
+	Grade getMathGrade(Double grade) {
 		return new MathGrade(grade);
 	}
+//
+//	@Bean
+//	@Scope(value = "prototype")
+//	Double grade(){
+//		return 145.6;
+//	}
 
 	@Bean
 	@Scope(value = "prototype")
